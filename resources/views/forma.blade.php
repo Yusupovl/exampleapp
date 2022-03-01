@@ -9,12 +9,48 @@
 </head>
 
 <body>
-    <form method="Post" action="/forma">
-        @csrf
-        A: <input type="number" name="number1">
-        B: <input type="number" name="number2">
-        <input type="submit" name="submit" value="submit">
-    </form>
+
+
+
+
+
+
+
+
+    <table border="1">
+        <p>Saralangan</p>
+        <tr>
+            <th>№</th>
+            <th>Citys</th>
+        </tr>
+
+        <@foreach ($city as $c) <tr>
+            <td> {{$loop->iteration}}</td>
+            <td>{{ $c }}</td>
+            </tr>
+            @endforeach
+
+    </table>
+
+
+    <table border="1">
+        <p>Saralanmagan</p>
+        <tr>
+            <th>№</th>
+            <th>Citys</th>
+        </tr>
+
+        <@foreach ($citys as $s) <tr>
+            <td> {{$loop->iteration}}</td>
+            <td>{{ $s }}</td>
+            </tr>
+            @endforeach
+
+    </table>
+
+
+
+
 </body>
 
 </html>

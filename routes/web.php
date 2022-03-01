@@ -29,3 +29,10 @@ Route::get('/user', [HomeController::class, 'index']);
 
 Route::get('/forma', [HomeController::class, 'form']);
 Route::post('/forma', [HomeController::class, 'sum']);
+
+
+
+Route::get('/city', [HomeController::class, 'city']);
+Route::get('/set_n', [HomeController::class, 'inputN'])->name('setN');
+Route::post('/post_citiiouytretyuiouyhtres', [HomeController::class, 'inputCities'])->name('post_cities');
+Route::post('/view_cities', [HomeController::class, 'showCities'])->name('view_cities');
